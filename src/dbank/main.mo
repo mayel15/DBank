@@ -9,7 +9,8 @@ actor DBank {
   stable var currentValue: Float = 300; // stable : persistent variable (orthogonal persistance)
   //once the state change, this is keeped in each cycle 
   
-  //currentValue := 100; // replace the older value with a new one 
+  currentValue := 300; // replace the older value with a new one 
+  Debug.print(debug_show(currentValue));
   stable var startTime = Time.now();
   Debug.print(debug_show(startTime));
 
